@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.0"
+  },
+  "name": "proba_zavrsni",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "description": ""
+}

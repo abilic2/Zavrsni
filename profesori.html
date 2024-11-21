@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djelatnici</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <body>
+        <div id="navigacijska">
+            <ul>
+                <li class="item" id="popis">Preddiplomski</li>
+                <li class="item" id="popisdip">Diplomski</li>
+                <li class="item" id="popprof">Djelatnici</li>
+                <li class="item" id="reg">Registracija</li>
+                <li class="item" id="odjava">Odjava</li>
+            </ul>
+        </div>
+    </body>
+    
+    <div id="glavna">
+        
+        <div class="pretrazivac">
+            <p id="naslov">Djelatnici</p>
+            <div class="search-wrapper">
+                <input placeholder="Search..." type="text" name="pretrazivanje" id="pretrazivanje">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+        </div>
+        <div id="sort">
+           
+                <ul>
+                    <li class="dropdown">Položaj
+                        <div class="dropdown-sub-content">
+                            <ul id="polozaj-options">
+                                <li value="dekan">Dekan</li>
+                                <li value="profesor">Profesor</li>
+                                <li value="docent">Docent</li>
+                                <li value="prodekan">Prodekan</li>
+                                <li value="asistent">Asistent</li>
+                                <li value="Izvanredni profesor">Izvanredni profesor</li>
+                                <li value="suradnik">Suradnik</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">Odjel
+                        <div class="dropdown-sub-content">
+                            <ul id="odjel-options">
+                                <li value="matematika">Matematika</li>
+                                <li value="psihologija">Psihologija</li>
+                                <li value="informatika">Informatika</li>
+                                <li value="tehnika">Tehnika</li>
+                                <li value="fizika">Fizika</li>
+                                <li value="biologija">Biologija</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>  
+        </div>
+        <div id="lista"></div>
+    </div>
+    
+</body>
+
+<script src="profesori.js"></script>
+
+</html>

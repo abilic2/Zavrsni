@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stil_reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Registracija</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navigacijska">
+            <ul>
+                <li class="item" id="popis">Preddiplomski</li>
+                <li class="item" id="popprof">Djelatnici</li>
+                <li class="item" id="dip">Diplomski</li>
+                <li class="item" id="reg">Registracija</li>
+                <li class="item" id="odjava">Odjava</li>
+            </ul>
+        </div>
+        <div class="pretrazivac">
+            <p id="naslov">Registracije</p>
+        </div>
+        <div id="sort">
+            <ul>
+                <li class="dropdown">Izbor
+                    <div class="dropdown-sub-content">
+                        <ul id="options">
+                            <li value="1">Preddiplomski </li>
+                            <li value="2">Diplomski</li>
+                            <li value="3">Djelatnici</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="forms-container">
+            <form id="stud" action="#">
+                <p class="naslov">Registracija studenata preddiplomskog</p>
+                <label for="ime">Korisničko ime:</label><br>
+                <input type="text" id="ime" name="ime"><br>
+                <label for="prezime">Korisničko prezime:</label><br>
+                <input type="text" id="prezime" name="prezime"><br><br>
+                <label for="godina_studija">Godina studiranja</label><br>
+                <input type="number" id="godina_studija" name="godina_studija"><br>
+                <label for="semestar">Semestar</label><br>
+                <input type="number" id="semestar" name="semestar"><br>
+                <label for="smjer">Smjer</label><br>
+                <select id="smjer" name="smjer">
+                    <option>Informatika</option>
+                    <option>Informatika i tehnika</option>
+                    <option>Baze podataka</option>
+                </select><br>
+                <label for="predmeti">Polozeni predmeti:</label><br>
+                <select id="predmeti" name="predmeti">
+
+                </select>
+                <label for="prvi_izbor">Prvi izbor:</label><br>
+                <select id="prvi_izbor" name="prvi_izbor">
+                    <option>Nastavnički informatika</option>
+                    <option>Nastavnički informatika i tehnika</option>
+                    <option>Informatika baze podataka</option>
+                </select><br>
+                <label for="drugi_izbor">Drugi izbor:</label><br>
+                <select id="drugi_izbor" name="drugi_izbor">
+                    <option>Nastavnički informatika</option>
+                    <option>Nastavnički informatika i tehnika</option>
+                    <option>Informatika baze podataka</option>
+                </select><br>
+                <label for="treci_izbor">Treci izbor:</label><br>
+                <select id="treci_izbor" name="treci_izbor">
+                    <option>Nastavnički informatika</option>
+                    <option>Nastavnički informatika i tehnika</option>
+                    <option>Informatika baze podataka</option>
+                </select>
+                <button id="unos" type="submit">Unos</button>
+            </form>
+            <form id="studdip" action="#">
+                <p class="naslov">Registracija studenata diplomskog</p>
+                <label for="imed">Korisničko ime:</label><br>
+                <input type="text" id="imed" name="imed"><br>
+                <label for="prezime">Korisničko prezime:</label><br>
+                <input type="text" id="prezimed" name="prezimed"><br><br>
+                <label for="godina_studijad">Godina studiranja</label><br>
+                <input type="number" id="godina_studijad" name="godina_studijad"><br>
+                <label for="semestard">Semestar</label><br>
+                <input type="number" id="semestard" name="semestard"><br>
+                <label for="smjerd">Smjer</label><br>
+                <select id="smjerd" name="smjerd">
+                  <option>Baze podataka</option>
+                  <option>Nastavnički informatika i tehnika</option>
+                  <option>Nastavnički informatika</option>
+                </select><br>
+                <label for="predmetidip">Položeni predmeti:</label><br>
+                <select id="predmetidip" name="predmetidip"></select>
+                <button id="unosd" type="submit">Unos</button>
+              </form>
+            <div id="unosOcjeneModal" class="modal">
+                <div class="modal-content">
+                  <span class="close" id="closeModal">&times;</span>
+                  <label for="ocjena">Unesi ocjenu za <span id="predmet"></span>:</label>
+                  <input type="number" id="ocjena" min="1" max="5">
+                  <button id="spremiOcjenu">Spremi</button>
+                </div>
+              </div>
+            <form id="prof" action="#">
+                <p class="naslov">Registracija djelatnika</p>
+                <label for="ime">Korisničko ime:</label><br>
+                <input type="text" id="imep" name="ime"><br>
+                <label for="prezime">Korisničko prezime:</label><br>
+                <input type="text" id="prezimep" name="prezime"><br><br>
+                <label for="polozaj">Položaj</label><br>
+                <input type="text" id="polozaj" name="polozaj"><br>
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="lozinka">lozinka</label><br>
+                <input type="password" id="lozinka" name="lozinka"><br>
+                <label for="kontakt">Kontakt</label><br>
+                <input type="tel" id="kontakt" name="kontakt"><br>
+                <label for="ured">Ured</label><br>
+                <input type="text" id="ured" name="ured"><br>
+                <label for="odjel">Odjel</label><br>
+                <input type="text" id="odjel" name="odjel"><br>
+                <div id="divpred">
+                    <label for="nazivpred">Predmeti</label>
+                    <input type="text" name="nazivpred" id="nazivpred">
+                    <label for="ects">ECTS:</label>
+                    <input type="number" name="ects" id="ects">
+                    <button id="dodpred" type="button">Dodaj predmet</button>
+                </div>
+                <button id="dodprofesora" type="submit">Unos</button>
+            </form>
+        </div>
+    </div>
+    <script src="registracija.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+   
+}
+
+#navigacijska {
+    background-color: #4CAF50;
+    padding: 1rem;
+    position: fixed;
+    grid-area: a;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#navigacijska ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#navigacijska .item {
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#navigacijska .item:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+#modal{
+    display: none;
+}
+
+#popprom {
+    display: flex;
+    justify-content: center; /* Središnje poravnanje */
+    align-items: center;
+    height: 60vh; /* Visina sekcije */
+    margin-top: 5rem; /* Prazan prostor ispod navigacije */
+}
+
+#popprom ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 50px; /* Razmak između stavki */
+}
+
+#popprom .item {
+    color: #333;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+#popprom .item:hover {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50; /* Pocrta se pri hoveru */
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 15% auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Sekcije unutar modala */
+.modal-section.hidden {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+}
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    background-color:#45a049;
+}
